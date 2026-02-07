@@ -1,14 +1,120 @@
-.contenedores {
-  display: flex;
-  flex-direction: column; /* filas verticales */
-  gap: 30px;              /* espacio entre filas */
-  max-width: 1200px;
-  margin: 0 auto;         /* centra en la página */
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.box {
-  padding: 40px;
-  background: #f5f5f5;
-  border-radius: 12px;
-  text-align: center;
+body {
+    font-family: Oswald, Montserrat;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #222;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.musicology {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 350px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    background-color: #ff6a2c;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+.SECCION1,
+.SECCION2 {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.SECCION1{
+    background-color: #ff6a2c;
+}
+
+.SECCION2{
+    background-color: #222;
+}
+
+.SECCION1 h2,
+.SECCION2 h2 {
+    margin-bottom: 15px;
+}
+
+.tour-text {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    max-width: 250px;
+}
+
+.pricing .card {
+    background-color: #ff6a2c;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* BOTÓN PRECIO */
+.price-btn {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer-content {
+    background-color: #ff6a2c;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
